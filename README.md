@@ -1,6 +1,6 @@
 # vue-admin-template
 
-English | [简体中文](./README-zh.md)
+ 
 
 
 # 特别感谢
@@ -8,60 +8,55 @@ English | [简体中文](./README-zh.md)
 原版作者https://github.com/PanJiaChen
 
 # 说明
+# Vue-base-template
 
-
-> A minimal vue admin template with Element UI & axios & iconfont & permission control & lint
-
-**Live demo:** http://panjiachen.github.io/vue-admin-template
-
-
-**The current version is `v4.0+` build on `vue-cli`. If you want to use the old version , you can switch branch to [tag/3.11.0](https://github.com/PanJiaChen/vue-admin-template/tree/tag/3.11.0), it does not rely on `vue-cli`**
 
 ## Build Setup
 
 ```bash
-# clone the project
-https://github.com/Sxdw/Vue-base-template.git
+# 克隆项目
+git clone https://github.com/Sxdw/Vue-base-template.git
 
-# enter the project directory
+# 进入项目目录
 cd Vue-base-template
 
-# install dependency
+# 安装依赖
 npm install
 
-# develop
+# 启动服务
 npm run dev
 ```
 
-This will automatically open http://localhost:9528
+浏览器访问 [http://localhost:9528](http://localhost:9528)
 
-## Build
+## 发布
 
 ```bash
-# build for test environment
+# 构建测试环境
 npm run build:stage
 
-# build for production environment
+# 构建生产环境
 npm run build:prod
 ```
 
-## Advanced
+## 其它
 
 ```bash
-# preview the release environment effect
+# 预览发布环境效果
 npm run preview
 
-# preview the release environment effect + static resource analysis
+# 预览发布环境效果 + 静态资源分析
 npm run preview -- --report
 
-# code format check
+# 代码格式检查
 npm run lint
 
-# code format check and auto fix
+# 代码格式检查并自动修复
 npm run lint -- --fix
 ```
 
-Refer to [Documentation](https://panjiachen.github.io/vue-element-admin-site/guide/essentials/deploy.html) for more information
+
+
 
 
 
