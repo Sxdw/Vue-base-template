@@ -3,7 +3,7 @@
     <h3 class="ouj">表单</h3>
     <div class="yiu">
         <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
-            <el-form-item label="活动名称" prop="name">
+            <el-form-item label="区域名称" prop="name">
                 <el-input v-model="ruleForm.name"></el-input>
             </el-form-item>
             <el-form-item label="活动区域" prop="region">
@@ -25,7 +25,7 @@
                     </el-form-item>
                 </el-col>
             </el-form-item>
-            <el-form-item label="即时配送" prop="delivery">
+            <el-form-item label="停车时间" prop="delivery">
                 <el-switch v-model="ruleForm.delivery"></el-switch>
             </el-form-item>
             <el-form-item label="活动性质" prop="type">
