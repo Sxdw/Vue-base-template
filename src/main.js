@@ -24,12 +24,16 @@ import '@/permission' // permission control
  * please remove it before going online ! ! !
  */
 if (process.env.NODE_ENV === 'production') {
-  const { mockXHR } = require('../mock')
+  const {
+    mockXHR
+  } = require('../mock')
   mockXHR()
 }
 
 // set ElementUI lang to EN
-Vue.use(ElementUI, { locale })
+Vue.use(ElementUI, {
+  locale
+})
 // 如果想要中文版 element-ui，按如下方式声明
 // Vue.use(ElementUI)
 
@@ -40,4 +44,13 @@ new Vue({
   router,
   store,
   render: h => h(App)
+})
+
+import VueAMap from 'vue-amap'
+Vue.use(VueAMap)
+VueAMap.initAMapApiLoader({
+  key: '77bb20d8198eeadfdf5a2d48f64d9aa9',
+  plugin: ['AMap.Scale', 'AMap.OverView', 'AMap.ToolBar', 'AMap.MapType', 'AMap.PlaceSearch', 'AMap.Geolocation', 'AMap.Geocoder'],
+  v: '1.4.4',
+  uiVersion: '1.0'
 })
