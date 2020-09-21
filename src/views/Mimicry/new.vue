@@ -25,6 +25,7 @@ export default {};
 <style>
 .cuuo {
     display: flex;
+
     background: #ecf0f3;
 }
 
