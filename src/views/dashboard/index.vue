@@ -1,6 +1,6 @@
 <template>
 <div>
-    <el-backtop target=".page-component__scroll .el-scrollbar__wrap"></el-backtop>
+
     <div class="some">
         <div class="element element-one">
             <i class="el-icon-s-custom wh"></i>
