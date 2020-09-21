@@ -30,8 +30,7 @@ import Layout from "@/layout";
  * a base page that does not have permission requirements
  * all roles can be accessed
  */
-export const constantRoutes = [
-  {
+export const constantRoutes = [{
     path: "/login",
     component: () => import("@/views/login/index"),
     hidden: true
@@ -47,65 +46,71 @@ export const constantRoutes = [
     path: "/",
     component: Layout,
     redirect: "/dashboard",
-    children: [
-      {
-        path: "dashboard",
-        name: "Dashboard",
-        component: () => import("@/views/dashboard/index"),
-        meta: {
-          title: "仪表板",
-          icon: "dashboard"
-        }
+    children: [{
+      path: "dashboard",
+      name: "Dashboard",
+      component: () => import("@/views/dashboard/index"),
+      meta: {
+        title: "仪表板",
+        icon: "dashboard"
       }
-    ]
+    }]
   },
   {
     path: "/",
     component: Layout,
     redirect: "/The_map",
-    children: [
-      {
-        path: "The_map",
-        name: "The_map",
-        component: () => import("@/views/The_map/index"),
-        meta: {
-          title: "地图",
-          icon: "el-icon-s-promotion"
-        }
+    children: [{
+      path: "The_map",
+      name: "The_map",
+      component: () => import("@/views/The_map/index.vue"),
+      meta: {
+        title: "地图",
+        icon: "el-icon-s-promotion"
       }
-    ]
+    }]
+  },
+  {
+    path: "/",
+    component: Layout,
+    redirect: "/Mimicry",
+    children: [{
+      path: "Mimicry",
+      name: "Mimicry",
+      component: () => import("@/views/Mimicry/new.vue"),
+      meta: {
+        title: "拟态区",
+        icon: "el-icon-magic-stick"
+      }
+    }]
   },
   {
     path: "/",
     component: Layout,
     redirect: "/music",
-    children: [
-      {
-        path: "music",
-        name: "music",
-        component: () => import("@/views/music/new.vue"),
-        meta: {
-          title: "音乐",
-          icon: "el-icon-service"
-        }
+    children: [{
+      path: "music",
+      name: "music",
+      component: () => import("@/views/music/new.vue"),
+      meta: {
+        title: "音乐",
+        icon: "el-icon-service"
       }
-    ]
+    }]
   },
   {
     path: "/",
     component: Layout,
     redirect: "/Parking",
-    children: [
-      {
-        path: "Parking",
-        name: "Parking",
-        component: () => import("@/views/Parking/new.vue"),
-        meta: {
-          title: "停车",
-          icon: "el-icon-bicycle"
-        }
+    children: [{
+      path: "Parking",
+      name: "Parking",
+      component: () => import("@/views/Parking/new.vue"),
+      meta: {
+        title: "停车",
+        icon: "el-icon-bicycle"
       }
-    ]
+    }]
   },
   {
     path: "/example",
@@ -116,8 +121,7 @@ export const constantRoutes = [
       title: "Example",
       icon: "el-icon-s-help"
     },
-    children: [
-      {
+    children: [{
         path: "table",
         name: "Table",
         component: () => import("@/views/table/index"),
@@ -141,17 +145,15 @@ export const constantRoutes = [
   {
     path: "/form",
     component: Layout,
-    children: [
-      {
-        path: "index",
-        name: "Form",
-        component: () => import("@/views/form/index"),
-        meta: {
-          title: "Form",
-          icon: "form"
-        }
+    children: [{
+      path: "index",
+      name: "Form",
+      component: () => import("@/views/form/index"),
+      meta: {
+        title: "Form",
+        icon: "form"
       }
-    ]
+    }]
   },
 
   {
@@ -163,16 +165,14 @@ export const constantRoutes = [
       title: "Nested",
       icon: "nested"
     },
-    children: [
-      {
+    children: [{
         path: "menu1",
         component: () => import("@/views/nested/menu1/index"), // Parent router-view
         name: "Menu1",
         meta: {
           title: "Menu1"
         },
-        children: [
-          {
+        children: [{
             path: "menu1-1",
             component: () => import("@/views/nested/menu1/menu1-1"),
             name: "Menu1-1",
@@ -187,8 +187,7 @@ export const constantRoutes = [
             meta: {
               title: "Menu1-2"
             },
-            children: [
-              {
+            children: [{
                 path: "menu1-2-1",
                 component: () =>
                   import("@/views/nested/menu1/menu1-2/menu1-2-1"),
@@ -232,15 +231,13 @@ export const constantRoutes = [
   {
     path: "external-link",
     component: Layout,
-    children: [
-      {
-        path: "https://panjiachen.github.io/vue-element-admin-site/#/",
-        meta: {
-          title: "External Link",
-          icon: "link"
-        }
+    children: [{
+      path: "https://panjiachen.github.io/vue-element-admin-site/#/",
+      meta: {
+        title: "External Link",
+        icon: "link"
       }
-    ]
+    }]
   },
 
   // 404 page must be placed at the end !!!
