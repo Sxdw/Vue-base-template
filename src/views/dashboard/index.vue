@@ -1,6 +1,5 @@
 <template>
 <div>
-
     <div class="some">
         <div class="element element-one">
             <i class="el-icon-s-custom wh"></i>
@@ -37,7 +36,7 @@
             </el-table-column>
         </el-table>
     </div>
-    <div>
+    <div class="ogn">
         <el-calendar class="liop" v-model="value"></el-calendar>
     </div>
 </div>
@@ -139,10 +138,15 @@ body {
     margin-left: 120px;
 }
 
+.ogn {
+    display: flex;
+}
+
 .liop {
     padding: 1px;
     margin: 30px;
     width: 500px;
     color: #34bfa3;
+    flex: 1;
 }
 </style>
