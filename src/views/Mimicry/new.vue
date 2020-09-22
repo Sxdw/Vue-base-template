@@ -1,6 +1,5 @@
 <template>
 <div>
-    <h3>拟态专区</h3>
     <div class="cuuo">
         <div class="drop-shadow">
             <i class="el-icon-d-caret"></i>
