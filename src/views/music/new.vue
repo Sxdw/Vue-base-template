@@ -10,7 +10,7 @@
     </div>
     <div class="okhg">
         <div class="polhbg">
-            <div class="card left">文字</div>
+            <div class="card left"></div>
             <div class="card right"></div>
         </div>
     </div>
